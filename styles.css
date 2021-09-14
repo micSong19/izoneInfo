@@ -1,0 +1,162 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0%;
+}
+
+.inner_main_menu {
+    margin: 0 auto;
+    width: 1253px;
+}
+
+.inner_main_menu ul {
+    margin: 0;
+    padding: 50px;
+    list-style: none;
+    text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+}
+
+.inner_main_menu ul li:nth-child(1) {
+    float: left;
+}
+
+
+.inner_main_menu ul li a {
+    color: #e40f88;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 150px;
+    transition: color 0.5s;
+}
+
+.inner_main_menu ul li a:hover {
+    color: #411041;
+}
+
+.nav-wrapper {
+    width: 100%;
+    position: relative;
+    background:rgba(231, 207, 161, 0.3);
+}
+
+.logo-wrapper {
+    padding: 76px;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -205px;
+}
+
+.logo-wrapper img {
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+.introduction-wrapper p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 0;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.introduction-wrapper h1 {
+    color: #e40f88;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.group-photo-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.group-photo-wrapper img {
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 20px solid rgb(56, 53, 53);*/
+    padding-top: 10px;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+/* mini svg animation */
+
+.star-svg-wrapper {
+    position: absolute;
+    left: 667px;
+    top: 389px;
+    transform: scale(1.9);
+}
+
+#bottom-ring {
+    animation: b-ring 2s ease-in-out infinite alternate;
+    transform-origin: center;
+}  
+
+#top-ring {
+    animation: b-ring 2.5s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes b-ring {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(20deg);
+    }
+}
+
+#stars {
+    animation: star 5s infinite alternate;
+    /*animation: moving 5s infinite alternate;*/
+}
+
+@keyframes star {
+    15% {opacity: 0}
+    35% {opacity: 1}
+    65% {opacity: 1}
+    85% {opacity: 0}
+
+    from {
+        transform: rotateY(6deg);
+    }
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes moving {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(10deg);
+    }
+}

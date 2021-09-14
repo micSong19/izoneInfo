@@ -1,0 +1,120 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-left: 50px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-bottom: 5px;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #e40f88;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid #5f0c3d;
+}
+
+.nav-link-wrapper a:hover {
+    color: #5f0c3d;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid #5f0c3d;
+}
+
+.active-nav-link a {
+    color: #5f0c3d !important;
+}
+
+.nav-link-logo-wrapper img {
+    height: auto;
+    width: 135px;
+}
+
+/* members photos and info */
+
+.members-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 0.3em;
+    row-gap: 0.3em;
+}
+
+.members-item-wrapper {
+    position: relative;
+}
+
+.members-img-background {
+    height: 460px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name-wrapper {
+    padding-bottom: 20px;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.img-text-wrapper {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover {
+    font-weight: 600;
+    color: #f0cce2;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(20%);
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
